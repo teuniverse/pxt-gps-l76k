@@ -1,0 +1,12 @@
+{
+  "name": "pxt-gps-l76k",
+  "version": "0.1.0",
+  "description": "MakeCode extension for DFRobot Gravity GNSS-GPS Module - I2C and UART - L76K",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": ["main.ts", "README.md"],
+  "testFiles": [],
+  "public": true
+}
