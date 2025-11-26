@@ -120,6 +120,30 @@ namespace GPS_L76K {
   }
 
   /**
+   * Get day
+   */
+  //% block
+  export function getDay(): number {
+    return day;
+  }
+
+  /**
+   * Get month
+   */
+  //% block
+  export function getMonth(): number {
+    return month;
+  }
+
+  /**
+   * Get year
+   */
+  //% block
+  export function getYear(): number {
+    return year;
+  }
+
+  /**
    * Update Utc
    */
   //% block
@@ -145,6 +169,30 @@ namespace GPS_L76K {
   //% block
   export function getUtcTime(): string {
     return utcTimeString;
+  }
+
+  /**
+   * Get hours
+   */
+  //% block
+  export function getHours(): number {
+    return hours;
+  }
+
+  /**
+   * Get minutes
+   */
+  //% block
+  export function getMinutes(): number {
+    return minutes;
+  }
+
+  /**
+   * Get seconds
+   */
+  //% block
+  export function getSeconds(): number {
+    return seconds;
   }
 
   /**
