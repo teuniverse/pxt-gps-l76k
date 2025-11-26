@@ -14,13 +14,11 @@ namespace GPS_L76K {
   let year = 0;
   let month = 0;
   let day = 0;
-  let dateString = "";
 
   // UTC time
   let hours = 0;
   let minutes = 0;
   let seconds = 0;
-  let utcTimeString = "";
 
   let latitudeDegree = 0.0;
   let longitudeDegree = 0.0;
@@ -106,9 +104,6 @@ namespace GPS_L76K {
     year = (result[0] << 8) | result[1];
     month = result[2];
     day = result[3];
-
-    dateString =
-      padNumber(day, 2) + "-" + padNumber(month, 2) + "-" + padNumber(year, 4);
   }
 
   /**
@@ -116,7 +111,9 @@ namespace GPS_L76K {
    */
   //% block
   export function getDate(): string {
-    return dateString;
+    return (
+      padNumber(day, 2) + "-" + padNumber(month, 2) + "-" + padNumber(year, 4)
+    );
   }
 
   /**
@@ -154,13 +151,6 @@ namespace GPS_L76K {
     hours = result[0];
     minutes = result[1];
     seconds = result[2];
-
-    utcTimeString =
-      padNumber(hours, 2) +
-      ":" +
-      padNumber(minutes, 2) +
-      ":" +
-      padNumber(seconds, 2);
   }
 
   /**
@@ -168,7 +158,13 @@ namespace GPS_L76K {
    */
   //% block
   export function getUtcTime(): string {
-    return utcTimeString;
+    return (
+      padNumber(hours, 2) +
+      ":" +
+      padNumber(minutes, 2) +
+      ":" +
+      padNumber(seconds, 2)
+    );
   }
 
   /**
